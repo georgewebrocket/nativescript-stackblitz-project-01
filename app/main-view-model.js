@@ -10,7 +10,7 @@ function getMessage(counter) {
 
 export function createViewModel() {
   const viewModel = new Observable();
-  viewModel.counter = 10;
+  /*viewModel.counter = 10;
   viewModel.message = getMessage(viewModel.counter);
 
   viewModel.onTap = () => {
@@ -24,7 +24,9 @@ export function createViewModel() {
   viewModel.onReset = () => {
     viewModel.counter = 10;
     viewModel.set('message', getMessage(viewModel.counter));
-  };
+  };*/
+
+  viewModel.webViewSrc = "https://webrocket.gr";
 
   return viewModel;
 }

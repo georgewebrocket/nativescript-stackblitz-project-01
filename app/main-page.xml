@@ -1,9 +1,13 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
-    <ActionBar title="My App" icon="" />
+    <!--<ActionBar title="My App" icon="" />-->
     <StackLayout class="p-20">
-        <Label text="Please tap me" class="h1 text-center" />
+        <!--<Label text="Please tap me" class="h1 text-center" />
         <Button text="TAP" tap="{{ onTap }}" class="-primary" />
         <Button text="RESET" tap="{{ onReset }}" class="-primary" />
-        <Label text="{{ message }}" class="h2 text-center" textWrap="true" />
+        <Label text="{{ message }}" class="h2 text-center" textWrap="true" />-->
+
+        <WebView row="1" id="myWebView" src="{{ webViewSrc }}" />
+
+
     </StackLayout>
 </Page>
